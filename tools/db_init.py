@@ -98,7 +98,7 @@ else:
 run(f'{sudo} echo -n')
 
 with status(f'Creating user {user}'):
-    run(f'{sudo} createuser {user}')
+    run(f'{sudo} createuser --superuser {user}')
 
 if args.force:
     try:
