@@ -27,7 +27,8 @@ settings = {
         'social_core.backends.google.GoogleOAuth2',
     ),
     'SOCIAL_AUTH_LOGIN_URL': '/',
-    'SOCIAL_AUTH_LOGIN_REDIRECT_URL': '/',  # on success
+    'SOCIAL_AUTH_LOGIN_REDIRECT_URL': '/',  # on successful auth
+    'SOCIAL_AUTH_NEW_USER_REDIRECT_URL': '/profile',  # first-time login
     'SOCIAL_AUTH_LOGIN_ERROR_URL': '/login-error/',
     'SOCIAL_AUTH_USER_FIELDS': ['username'],
     'SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL': True,
