@@ -36,6 +36,7 @@ settings = {
     'SOCIAL_AUTH_GOOGLE_OAUTH2_KEY': cfg['server.auth.google_oauth2_key'],
     'SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET': cfg['server.auth.google_oauth2_secret'],
     'SOCIAL_AUTH_REDIRECT_IS_HTTPS': cfg['server.auth.ssl'],
+    'SOCIAL_AUTH_FIELDS_STORED_IN_SESSION': ['invite_token'],
 }
 
 if cfg['server.auth.debug_login']:
